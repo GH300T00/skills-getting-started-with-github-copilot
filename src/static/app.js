@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.className = "activity-card";
 
         const spotsLeft = details.max_participants - details.participants.length;
+        // Participant information - render list of participants
         const participantsHtml = details.participants.length
           ? `<ul class="participants-list">${details.participants
               .map(

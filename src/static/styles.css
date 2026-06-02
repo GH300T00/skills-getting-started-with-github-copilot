@@ -81,6 +81,7 @@ section h3 {
   color: #444;
 }
 
+/* Participant information styling */
 .participants-list li {
   display: flex;
   justify-content: space-between;
