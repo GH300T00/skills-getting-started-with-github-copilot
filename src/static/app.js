@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ? `<ul class="participants-list">${details.participants
               .map(
                 (email) =>
-                  `<li><span>${email}</span><button class="remove-participant" data-activity="${encodeURIComponent(
+                  `<li data-participant="${encodeURIComponent(email)}"><span>${email}</span><button class="remove-participant" data-activity="${encodeURIComponent(
                     name
                   )}" data-email="${encodeURIComponent(email)}" aria-label="Remove ${email}">&times;</button></li>`
               )
